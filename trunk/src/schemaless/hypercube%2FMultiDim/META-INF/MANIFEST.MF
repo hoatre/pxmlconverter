@@ -1,0 +1,192 @@
+Manifest-Version: 1.0
+Main-Class: samples.HyperCube
+
+Name: samples/HyperCube$1.class
+SHA1-Digest: 48zDaf7jHd1tHdeSFh2J+VkW3lw=
+
+Name: mathematics/multidimensional/IMDVector.class
+SHA1-Digest: s1xgbzprIYiDpMTi16eR0Helxhs=
+
+Name: samples/PlotterSample$Paraboloid.class
+SHA1-Digest: erBb16tvb/FafUxinzNfWszbRC4=
+
+Name: mathematics/multidimensional/shape/MDUniverse$3$1.class
+SHA1-Digest: dEhrSrfHz0QRqXXY541gcXF4hE0=
+
+Name: mathematics/multidimensional/MDCustomSquareTransform.class
+SHA1-Digest: YxSMjFNAdeaF9qMlH9EGH0urkUk=
+
+Name: mathematics/multidimensional/shape/MDPoint.class
+SHA1-Digest: crV2HRC+a9vss1v557ESQ6dK0xM=
+
+Name: samples/HyperCube$Intf.class
+SHA1-Digest: 1E5q2EwnSgv43JJpngTZSWN5f50=
+
+Name: mathematics/multidimensional/shape/MDUniverse$8.class
+SHA1-Digest: Pfuh4hxQH9v3Kqwspvto6cEQNDs=
+
+Name: samples/HyperCube$4.class
+SHA1-Digest: JBXDWImp+b08R7gNn5To+af3V0Y=
+
+Name: mathematics/multidimensional/MDParametrizedSet.class
+SHA1-Digest: GBpbjJk1RldXzkqhva/fqnrYBRw=
+
+Name: mathematics/multidimensional/shape/MDUniverse$2.class
+SHA1-Digest: Vt+3+CAPMLICG1oBXgjbn/flDmQ=
+
+Name: mathematics/multidimensional/shape/MDSegment$Intf.class
+SHA1-Digest: qp+8vgm3J960E2gOEz/ikrnaYPY=
+
+Name: samples/PlotterSample.class
+SHA1-Digest: nLqH/k6Eqi/YLasqTcgVHe5r3XM=
+
+Name: mathematics/multidimensional/MDRotate$Intf.class
+SHA1-Digest: NpsdiylEAu+KRmjgs/hPmp/oBy4=
+
+Name: mathematics/multidimensional/shape/MDUniverse$7.class
+SHA1-Digest: U34Rf7Ni/5yK/QkdgpL1LuDlC4Q=
+
+Name: mathematics/multidimensional/MDRotate.class
+SHA1-Digest: oTTgpoa3q/c7PWuSNKgjRwWEnRc=
+
+Name: mathematics/multidimensional/shape/MDUniverse$Intf.class
+SHA1-Digest: dEkaIgE4XnB9G13kXt/TpYuwwm8=
+
+Name: samples/HyperCube$3.class
+SHA1-Digest: DIN46Pbvud7n99/TDZRWAOU/X9M=
+
+Name: mathematics/multidimensional/shape/MDUniverse$3.class
+SHA1-Digest: bQ0DMgabejxKHyv/fX4BK4iAQ2k=
+
+Name: samples/PlotterSample$Paraboloid$Intf.class
+SHA1-Digest: o1uMm6D41diX1hxfW+LWtjwlwRw=
+
+Name: mathematics/multidimensional/MDVector.class
+SHA1-Digest: 5oT/L9Pw7GiKmy8O4BHd4pY1Gr4=
+
+Name: mathematics/multidimensional/shape/MDCube.class
+SHA1-Digest: tFGoJQgTMhTUADxQd50BdIvX5ak=
+
+Name: mathematics/multidimensional/shape/MDUniverse$4$1.class
+SHA1-Digest: dEBwFc/FRmcCBAtLHAL/1BcH+QA=
+
+Name: mathematics/multidimensional/shape/MDPlotter.class
+SHA1-Digest: Kn4PdNKssRDgIIFnq+76BkBe7TI=
+
+Name: mathematics/multidimensional/IMDMatrix.class
+SHA1-Digest: QRuOQg7SKRNVQrIe2XBv8ALUc2c=
+
+Name: mathematics/multidimensional/MDVector$Intf.class
+SHA1-Digest: yx7qQXm0DjBixN5fygntq0b7YEQ=
+
+Name: mathematics/multidimensional/shape/MDUniverse$1.class
+SHA1-Digest: p13Q5HGO6H4O6D77SgE1mT3wbl8=
+
+Name: samples/HyperCube.class
+SHA1-Digest: RkxdhknbIpARPCqI9f6d/AwDC3o=
+
+Name: mathematics/multidimensional/MDSquareTransform$Intf.class
+SHA1-Digest: 65mBWSk/9KDTrNuLhWa/xRLTQNg=
+
+Name: mathematics/multidimensional/MDParametrizedSet$Intf.class
+SHA1-Digest: Duhkmi/uTTeamVDCdIqtEYbRlE0=
+
+Name: mathematics/multidimensional/MDTransform$Intf.class
+SHA1-Digest: A/Ne00zy+Jb+7ipG67Hj+hNxg/w=
+
+Name: mathematics/multidimensional/shape/MDUniverse$4.class
+SHA1-Digest: s8boaef7qROSasmOVm12GJScPXU=
+
+Name: mathematics/multidimensional/shape/MDCube$Intf.class
+SHA1-Digest: yPXIE2sRQoRowNEFCX7dqdKPO5Y=
+
+Name: samples/HyperCube$2.class
+SHA1-Digest: SuIXjwcnnfigZy00l5UP/Ad8Khc=
+
+Name: mathematics/multidimensional/shape/MDUniverse.class
+SHA1-Digest: nFSxQpd+wxQY81+RwPNVZG0jdoI=
+
+Name: mathematics/multidimensional/shape/MDGroup.class
+SHA1-Digest: 2jjT9UJdkbYI0OWtGNnl0jm++8g=
+
+Name: mathematics/multidimensional/MDSet.class
+SHA1-Digest: rqtFB/Ud3uqLPe6XAecqvPRttvk=
+
+Name: mathematics/multidimensional/MDSet$Intf.class
+SHA1-Digest: LiB+9TDp5Cpmcw+OEgHAqJIi2LI=
+
+Name: samples/PlotterSample$PSI.class
+SHA1-Digest: xK5yhsEzITz8CF9niCpYHPhfXMQ=
+
+Name: mathematics/multidimensional/MDMatrix$Intf.class
+SHA1-Digest: ZbOD86GPotnpX5YMxb14Pi5SSPI=
+
+Name: samples/PlotterSample$PSI$Intf.class
+SHA1-Digest: f8ZBAfzvonCHrSaHOkBB8rqzQO8=
+
+Name: mathematics/multidimensional/shape/MDSegment.class
+SHA1-Digest: MOiR5inVB4SBatYLSuJqGpSNH64=
+
+Name: mathematics/multidimensional/MDSquareTransform.class
+SHA1-Digest: /VPtXeBqxjWOfZP5Wepfdfh1LLY=
+
+Name: mathematics/multidimensional/shape/MDUniverse$5.class
+SHA1-Digest: MNFGJCKL4nylhkxSADi5Cvoyy9Q=
+
+Name: mathematics/multidimensional/shape/MDShape$Intf.class
+SHA1-Digest: gfuE/sJQuugbeqb6NH5a4jlZJdc=
+
+Name: mathematics/multidimensional/shape/MDPoint$Intf.class
+SHA1-Digest: AcDm+8xQhEFCpRu9s+1pNAX519c=
+
+Name: samples/HyperCube$5.class
+SHA1-Digest: CiZcHGXJUJ8jqHsE1d/IuygBsxI=
+
+Name: mathematics/multidimensional/IMDSquareTransform.class
+SHA1-Digest: l7P9ixIXpIJXJF/aCKo3wZqJTj4=
+
+Name: mathematics/multidimensional/shape/MDPlotter$Intf.class
+SHA1-Digest: OOeA9eQXcvWYeYAX/bwHPgs0A3I=
+
+Name: mathematics/multidimensional/MDTransform.class
+SHA1-Digest: 6nTyd7zRlVYboeL7rvqzKi32KsU=
+
+Name: mathematics/multidimensional/IMDSet.class
+SHA1-Digest: +DiWVzHQ78zZ/q+GVwYJnjdGqlA=
+
+Name: samples/PlotterSample$Intf.class
+SHA1-Digest: fOAMDAunUXGM6FkIMbTllWpeG+k=
+
+Name: mathematics/multidimensional/shape/MDGroup$Intf.class
+SHA1-Digest: mG1AQ9ab1BVKry6zFvB/x7WJnRw=
+
+Name: mathematics/multidimensional/shape/MDShape.class
+SHA1-Digest: ieAlyj5thZQnXSfp+LK6jn04fLU=
+
+Name: mathematics/multidimensional/MDCustomSquareTransform$Intf.class
+SHA1-Digest: nERZZbTPw8uaMY1NSbAa45z6vaU=
+
+Name: mathematics/multidimensional/IMDSquareMatrix.class
+SHA1-Digest: lcBrPrOsRRM19LNQCJNb56r53j8=
+
+Name: mathematics/multidimensional/IMDTransform.class
+SHA1-Digest: vk6Xhp974uRf/rriK+pBmTn/pIE=
+
+Name: mathematics/multidimensional/shape/MDUniverse$3$1$1.class
+SHA1-Digest: 5YZqz4cM6j1PG5+hXLoJMSPk37E=
+
+Name: mathematics/multidimensional/shape/MDUniverse$4$1$1.class
+SHA1-Digest: MlN6Y5aYmlpTqAPzl4YaCAZD8z4=
+
+Name: mathematics/multidimensional/shape/MDUniverse$6.class
+SHA1-Digest: pP0AFIrtATQWMen81rDORMjOV4c=
+
+Name: mathematics/multidimensional/IMDSquareMatrix$Intf.class
+SHA1-Digest: E9O/ICszXelfrH0rHaNum/D0rhs=
+
+Name: mathematics/multidimensional/MDMatrix.class
+SHA1-Digest: XA9Vj8AUzdE9SHLxXBd/U23O6Yc=
+
+Name: mathematics/multidimensional/shape/MDUniverse$2$1.class
+SHA1-Digest: ZCbRWcZ5ZkxAUYErZfuif9LMiHM=
+
