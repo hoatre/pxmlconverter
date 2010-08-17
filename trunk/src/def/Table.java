@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Vector;
 
+import dtdParser.DTDNode;
+
 import schemaless.Import;
 
 public class Table {
@@ -195,6 +197,13 @@ public class Table {
 	 */
 	public String toString() {
 		return this.getTableName();
+	}
+	
+	//Gebruikt zelfde filewriter
+	public Table getInlineTableCopy(DTDNode inlined) {
+		Table result = new Table(Constants.SHAREDPREFIX, this.inputfilename, "_" + inlined.getName(), this.dir);
+		result.fw = this.fw;
+		return result;
 	}
 	
 	/**

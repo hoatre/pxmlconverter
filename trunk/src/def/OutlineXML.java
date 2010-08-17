@@ -128,7 +128,6 @@ public class OutlineXML extends XMLReaderSAX {
 		
 		XMLReader xr = XMLReaderFactory.createXMLReader();
 		//xr.setEntityResolver(new DummyEntityResolver());
-		DTDHandler dtdh = new DTDHandler();
 		OutlineXML handler = new OutlineXML();
 		xr.setContentHandler(handler);
 		xr.setErrorHandler(handler);

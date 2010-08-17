@@ -21,7 +21,6 @@ public class DTDHandler extends DefaultHandler2 {
 	
 	public void startDTD(String name, String publicId, String systemId) throws SAXException {
 		//System.out.println("DTD Info: " + name + ", " + publicId + ", " + systemId);
-		handler.setSharedTables(DTDMain.importFile(new File(systemId), handler)); 
-		//Hierboven:DTD parser aanroepen om parser te gebruiken, vervolgens het resultaat invoeren in de handler
+		DTDMain.importFile(new File(systemId), handler); 
 	}
 }

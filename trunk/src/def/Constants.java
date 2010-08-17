@@ -24,6 +24,8 @@ public interface Constants {
 	public static final String DOT = ".";	
 	public static final String CREATETABLE = "CREATE TABLE ";
 	public static final String DROPTABLE = "DROP TABLE ";
+	public static final String DROPCOLUMN = "DROP COLUMN ";
+	public static final String ALTERTABLE = "ALTER TABLE ";
 	public static final String EXISTS = " EXISTS ";
 	public static final String IF = " IF ";
 	public static final String NOT = " NOT ";
@@ -36,6 +38,11 @@ public interface Constants {
 	public static final String ASTERIX = "* ";
 	public static final String CASCADE = " CASCADE ";
 	public static final String ALL = " ALL ";
+	public static final String LEFTJOIN = " LEFT JOIN ";	
+	public static final String ON = " ON ";
+	public static final String EQUALS = "=";
+	public static final String RENAMETO = " RENAME TO ";
+	public static final String ADD = " ADD ";	
 	
 	/* columnnames */
 	public static final String PREORDER = "pre";
@@ -61,6 +68,7 @@ public interface Constants {
 	public static final String PREFIX_UACCEL = "uaccel_";
 	public static final String PREFIX_PROBCOLUMN = "_pre";
 	public static final String PREFIX_REPAIRKEY = "rk_";
+	public static final String SHAREDPREFIX = "shared_";
 	
 	/* Starting values */
 	public static final int INSTANTIATE_PREORDER = 0;

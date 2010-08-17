@@ -246,14 +246,7 @@ public class SQL implements Constants {
     	return phaseTable;
     }
 
-	public static void insertNodeCDATA(Vector<Table> sharedTables,
-			String cdata, Node textNode) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public static void insertNodeCDATA(Vector<Table> sharedTables,
-			String cdata, Node textNode) {
+	public static void insertNodeCDATA(Vector<Table> sharedTables, String cdata, Node textNode) {
 		// TODO Auto-generated method stub
 		
 	}
