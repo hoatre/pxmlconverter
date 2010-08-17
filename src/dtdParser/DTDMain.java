@@ -45,12 +45,12 @@ public class DTDMain
 		}
 	}
 	
-	public static Vector<Table> importFile(File file, MakeSQLDump handler) {
-		Vector<Table> sharedTables = importFile(file);
-		return sharedTables;//TODO VIES!
+	public static void importFile(File file, MakeSQLDump handler) {
+		importFile(file);
+		//TODO handler voorzien van Vector<Nodes>, waarbij Nodes voorzien zijn van tabellen.
 	}
 	
-	public static Vector<Table> importFile(File file)
+	public static void importFile(File file)
 	{
 		System.out.println("--------------------NEW FILE-------------------- " + file.getName());
         DTDParser parser;
@@ -74,28 +74,16 @@ public class DTDMain
         DTD transformed = dtd.transformDTD();
         System.out.println(transformed);
         
-        Vector<Node> z = DTD.getAllNodes(transformed);
+        String filename = file.getName();
+        Vector<DTDNode> z = DTD.getAllNodes(transformed, filename.substring(0, filename.lastIndexOf(Constants.DOT)), file.getParent());
+        
         for (int y = 0; y < z.size(); y++) {
         	System.out.println("Node: " + z.get(y) + z.get(y).toStringParents() + z.get(y).toStringChildren());
         }
         
         //Nodes omzetten naar SQL
-        String filename = file.getName();
-        Vector<Table> sharedTables = SQL.createSharedTables(z, filename.substring(0, filename.lastIndexOf(Constants.DOT)), file.getParent());
-        
-        
-        /*
-        Inlinen doen we niet in dit onderzoek
-         
-        Vector<InlinedNode> x = DTD.inline(transformed, DTD.getAllNodes(transformed));
-
-        for (int i = 0; i < x.size(); i++) {
-        	System.out.println(x.get(i));
-        }
-        */
+        SQL.createSharedTables(z);
         
         System.out.println("--------------------END FILE--------------------");
-        
-        return sharedTables; //TODO heel vies!!!
 	}   
 }

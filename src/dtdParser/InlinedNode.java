@@ -11,26 +11,26 @@ public class InlinedNode {
 	public static final String PREFIX = "IN_";
 	
 	private Vector<InlinedNode> children;
-	private Vector<Node> inlinedNodes;
+	private Vector<DTDNode> inlinedNodes;
 	private String tableName;
 	private String directory;
 	private String nodetype;
 	
 	public InlinedNode() {
 		children = new Vector<InlinedNode>();
-		inlinedNodes = new Vector<Node>();
+		inlinedNodes = new Vector<DTDNode>();
 	}
 	
-	public void addInlinedNode(Node node) {
+	public void addInlinedNode(DTDNode node) {
 		inlinedNodes.add(node);
-		node.setVisited(true);
+		//node.setVisited(true);
 	}
 	
 	public void addChild(InlinedNode node) {
 		children.add(node);
 	}
 	
-	public boolean containsNode(Node node) {
+	public boolean containsNode(DTDNode node) {
 		return inlinedNodes.contains(node);
 	}
 	
@@ -52,7 +52,7 @@ public class InlinedNode {
 		return result;
 	}
 	
-	public static InlinedNode getNode(Vector<InlinedNode> v, Node node) {
+	public static InlinedNode getNode(Vector<InlinedNode> v, DTDNode node) {
 		return getNode(v, node.getName());
 	}
 	
@@ -72,7 +72,7 @@ public class InlinedNode {
  		result.createColumn(nodetype, Constants.STRING); //TODO nodetype is niet gedefinieerd, gelijk aan rootelement
  		
  		for (int i = 0; i < inlinedNodes.size(); i++) {
- 			Node inlined = inlinedNodes.get(i);
+ 			DTDNode inlined = inlinedNodes.get(i);
  			for (String att:inlined.getAtts().keySet()) {
  				//TODO default value gebruiken
  				result.createColumn(inlined.getName() + "_" + att, Constants.INT); //in artikel staat dat dezelfde naam moet worden gebruikt als het attribute

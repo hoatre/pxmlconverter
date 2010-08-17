@@ -175,21 +175,17 @@ public class DTD implements DTDOutput
 		return result;
 	}
 	
-	public static Vector<Node> getAllNodes(DTD dtd) {
+	//Maakt ook de parentrelatie aan
+	public static Vector<DTDNode> getAllNodes(DTD dtd, String inputFilename, String dir) {
 		Vector<DTDElement> v = dtd.getElementItems();
-		Vector<Node> nodes = new Vector<Node>();
+		Vector<DTDNode> nodes = new Vector<DTDNode>();
 		for(int i = 0; i < v.size(); i++) {
 			DTDElement par = v.get(i);
 			//System.out.println("Parent: " + par.getName());
 
-			Node parNode = Node.getNode(nodes, par.getName());
-			if (parNode == null) {
-				parNode = new Node(par.getName());
-				parNode.setAttributes(par.attributes);
-				nodes.add(parNode);
-			} else {
-				parNode.setAttributes(par.attributes);
-			}
+			DTDNode parNode = DTDNode.getOrMakeNode(nodes, par.getName());
+			parNode.setInputFilenameAndDir(inputFilename, dir);
+			parNode.setAttributes(par.attributes);
 			
 			Vector<DTDName> children = par.getChildren(); //TODO Type veranderen: DTDName naar Node (PCData is ook kind)
 			//Alle kinderen aflopen
@@ -199,19 +195,20 @@ public class DTD implements DTDOutput
 				//System.out.println("Child: " + child.getValue());
 				String childName = child.getValue();
 				//Per kind een key aanmaken en een lijst vullen met alle parent elementen
-				Node childNode = Node.getNode(nodes, childName);
-				if (childNode == null) {
-					Node newNode = new Node(childName);
-					nodes.add(newNode);
-					childNode = newNode;
-				}
+				DTDNode childNode = DTDNode.getOrMakeNode(nodes, childName);
 				childNode.addParent(par);
-				parNode.addChild(childNode);
+				//INLINEN
+				if(child.getCardinal().equals(DTDCardinal.NONE)) {
+					parNode.addInlined(childNode);
+				} else if (child.getCardinal().equals(DTDCardinal.ZEROMANY)) {
+					parNode.addChild(childNode);
+				} else { System.out.println("Deze cardinaliteit kan niet voorkomen: " + child.getCardinal()); }
 			}
 		}
 		return nodes;
 	}
 	
+	/*
 	public static Vector<InlinedNode> inline(DTD dtd, Vector<Node> nodes) {
 		Vector<DTDElement> v = dtd.getElementItems();
 		Vector<InlinedNode> inlined = new Vector<InlinedNode>();
@@ -242,11 +239,6 @@ public class DTD implements DTDOutput
 					System.out.println("Fout opgetreden. Node "+child.getValue()+" bestaat niet in de DTD graaf");
 				}
 				if (!childNode.isVisited()) {
-					/*
-					if (child.getValue().equals("e")) {
-						System.out.println("Parents: " + childNode.getParents().size());
-					}
-					*/
 					if (child.getCardinal().equals(DTDCardinal.ZEROMANY) || childNode.getParents().size() > 1) {
 						//Kan niet inlinen
 						InlinedNode newInNode = new InlinedNode();
@@ -262,4 +254,5 @@ public class DTD implements DTDOutput
 		}
 		return inlined;
 	}
+	*/
 }
