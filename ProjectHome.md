@@ -1,0 +1,1 @@
+This project is based on a research about creating a probabistic XML database on top of MayBMS. More information will be available soon.
